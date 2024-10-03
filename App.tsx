@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import SubmitsScreen from "./screens/SubmitScreen";
 import { FormScreen } from "./screens/FormScreen";
-import RandomImageScreen from "./RandomImageScreen";
+import RandomImageScreen from "./screens/RandomImageScreen";
 import DataProvider from "./DataProvider";
 
 import Ionicons from "@expo/vector-icons/Ionicons";

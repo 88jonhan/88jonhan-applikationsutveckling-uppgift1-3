@@ -40,4 +40,4 @@ export default function DataProvider({ children }: { children: ReactNode }) {
 	);
 }
 
-export const useNames = () => useContext(NamesContext);
+export const useData = () => useContext(NamesContext);

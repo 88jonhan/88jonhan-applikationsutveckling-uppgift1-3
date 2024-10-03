@@ -3,11 +3,11 @@ import {
 	ActivityIndicator,
 	View,
 	Text,
-	Image,
-	Button,
 	StyleSheet,
 	Pressable,
 } from "react-native";
+import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function RandomImageScreen() {
 	const [image, setImage] = useState<string | null>();
@@ -33,7 +33,13 @@ export default function RandomImageScreen() {
 				<Image source={{ uri: image! }} style={{ width: 300, height: 300 }} />
 			)}
 			<Pressable onPress={getRandomImage} style={styles.button}>
-				<Text style={styles.buttonText}>Get new image</Text>
+				<LinearGradient
+					// Button Linear Gradient
+					colors={["#4c669f", "#3b5998", "#192f6a"]}
+					style={styles.button}
+				>
+					<Text style={styles.buttonText}>Get new image</Text>
+				</LinearGradient>
 			</Pressable>
 		</View>
 	);
@@ -55,7 +61,6 @@ const styles = StyleSheet.create({
 		position: "absolute",
 		bottom: 0,
 		height: 50,
-		backgroundColor: "#2196f3",
 		width: "100%",
 		justifyContent: "center",
 		alignItems: "center",

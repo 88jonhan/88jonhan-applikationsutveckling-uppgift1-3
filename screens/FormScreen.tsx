@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-	View,
-	Text,
-	TextInput,
-	Button,
-	StyleSheet,
-	Pressable,
-} from "react-native";
+import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
 import { Controller, useForm } from "react-hook-form";
 import { useData } from "../DataProvider";
 import Slider from "@react-native-community/slider";
@@ -34,7 +27,6 @@ export function FormScreen() {
 	});
 
 	const onSubmit = handleSubmit((inputData) => {
-		console.log(data);
 		const newData = [...data, inputData];
 		saveData(newData);
 		reset();

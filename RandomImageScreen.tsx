@@ -6,6 +6,7 @@ import {
 	Image,
 	Button,
 	StyleSheet,
+	Pressable,
 } from "react-native";
 
 export default function RandomImageScreen() {
@@ -31,7 +32,9 @@ export default function RandomImageScreen() {
 			) : (
 				<Image source={{ uri: image! }} style={{ width: 300, height: 300 }} />
 			)}
-			<Button title="Get new image" onPress={getRandomImage} />
+			<Pressable onPress={getRandomImage} style={styles.button}>
+				<Text style={styles.buttonText}>Get new image</Text>
+			</Pressable>
 		</View>
 	);
 }
@@ -41,9 +44,24 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: "center",
 		alignItems: "center",
+		width: "100%",
+		height: "100%",
 	},
 	title: {
 		fontSize: 20,
 		fontWeight: "bold",
+	},
+	button: {
+		position: "absolute",
+		bottom: 0,
+		height: 50,
+		backgroundColor: "#2196f3",
+		width: "100%",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+	buttonText: {
+		color: "white",
+		fontSize: 20,
 	},
 });

@@ -86,8 +86,8 @@ export function FormScreen() {
 								step={1}
 								minimumValue={1}
 								maximumValue={120}
-								minimumTrackTintColor="#FFFFFF"
-								maximumTrackTintColor="#000000"
+								minimumTrackTintColor="#4630EB"
+								maximumTrackTintColor="#EB3046"
 								value={inputAge}
 								onValueChange={(value) => {
 									onChange(value);
@@ -126,7 +126,7 @@ export function FormScreen() {
 									// style={styles.checkbox}
 									value={maleIsChecked}
 									onValueChange={(value) => {
-										onChange(value ? "male" : "");
+										onChange(value ? "Man" : "");
 										setMaleIsChecked(value);
 										setFemaleIsChecked(false);
 										setOtherIsChecked(false);
@@ -148,7 +148,7 @@ export function FormScreen() {
 									// style={styles.checkbox}
 									value={femaleIsChecked}
 									onValueChange={(value) => {
-										onChange(value ? "female" : "");
+										onChange(value ? "Kvinna" : "");
 										setMaleIsChecked(false);
 										setFemaleIsChecked(value);
 										setOtherIsChecked(false);
@@ -170,7 +170,7 @@ export function FormScreen() {
 									// style={styles.checkbox}
 									value={otherIsChecked}
 									onValueChange={(value) => {
-										onChange(value ? "other" : "");
+										onChange(value ? "Annat" : "");
 										setMaleIsChecked(false);
 										setFemaleIsChecked(false);
 										setOtherIsChecked(value);
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
 		position: "absolute",
 		bottom: 0,
 		height: 50,
-		backgroundColor: "#2196f3",
+		backgroundColor: "#4630EB",
 		width: "100%",
 		justifyContent: "center",
 		alignItems: "center",

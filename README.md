@@ -1,5 +1,7 @@
 ## 88jonhan-applikationsutveckling-uppgift1-3
 
+https://github.com/88jonhan/88jonhan-applikationsutveckling-uppgift1-3
+
 ### Hur du kör programmet
 
 ```bash

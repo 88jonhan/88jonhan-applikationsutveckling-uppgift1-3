@@ -51,7 +51,7 @@ export function FormScreen() {
 					)}
 					name="firstName"
 				/>
-				{errors.firstName && <Text>This is required.</Text>}
+				{errors.firstName && <Text>Du måste fylla i förnamn.</Text>}
 			</View>
 			<View style={styles.inputContainer}>
 				<Text style={styles.inputLabel}>Efternamn:</Text>
@@ -70,7 +70,7 @@ export function FormScreen() {
 					)}
 					name="lastName"
 				/>
-				{errors.lastName && <Text>This is required.</Text>}
+				{errors.lastName && <Text>Du måste fylla i efternamn.</Text>}
 			</View>
 			<View style={styles.inputContainer}>
 				<Text style={styles.inputLabel}>Ålder:</Text>
@@ -104,7 +104,7 @@ export function FormScreen() {
 			</View>
 
 			<View style={styles.inputContainer}>
-				<Text style={styles.inputLabel}>Kön:</Text>
+				<Text style={[styles.inputLabel, { marginBottom: 10 }]}>Kön:</Text>
 				<Controller
 					control={control}
 					rules={{
@@ -120,7 +120,7 @@ export function FormScreen() {
 											: [styles.checkboxLabel]
 									}
 								>
-									Male
+									Man
 								</Text>
 								<Checkbox
 									// style={styles.checkbox}
@@ -142,7 +142,7 @@ export function FormScreen() {
 											: [styles.checkboxLabel]
 									}
 								>
-									Female
+									Kvinna
 								</Text>
 								<Checkbox
 									// style={styles.checkbox}
@@ -164,7 +164,7 @@ export function FormScreen() {
 											: [styles.checkboxLabel]
 									}
 								>
-									Other
+									Annat
 								</Text>
 								<Checkbox
 									// style={styles.checkbox}
@@ -185,7 +185,7 @@ export function FormScreen() {
 			</View>
 
 			<Pressable style={styles.button} onPress={onSubmit}>
-				<Text style={styles.buttonText}>Submit</Text>
+				<Text style={styles.buttonText}>Spara</Text>
 			</Pressable>
 		</View>
 	);

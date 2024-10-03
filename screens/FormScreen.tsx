@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { View, Text, TextInput, Button } from "react-native";
 import { Controller, useForm } from "react-hook-form";
-import { useNames } from "../DataProvider";
+import { useData } from "../DataProvider";
 import Slider from "@react-native-community/slider";
 import { Checkbox } from "expo-checkbox";
 
 export function FormScreen() {
-	const { data, saveData } = useNames();
+	const { data, saveData } = useData();
 	const [inputAge, setInputAge] = useState<number>(50);
 	const [maleIsChecked, setMaleIsChecked] = useState(false);
 	const [femaleIsChecked, setFemaleIsChecked] = useState(false);

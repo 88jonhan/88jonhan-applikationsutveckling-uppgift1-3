@@ -2,8 +2,8 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import SubmitsScreen from "./SubmitScreen";
-import { FormScreen } from "./FormScreen";
+import SubmitsScreen from "./screens/SubmitScreen";
+import { FormScreen } from "./screens/FormScreen";
 import RandomImageScreen from "./RandomImageScreen";
 import DataProvider from "./DataProvider";
 

@@ -11,14 +11,14 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
 	return (
-		// <DataProvider>
-		<NavigationContainer>
-			<Tab.Navigator>
-				<Tab.Screen name="Formulär" component={FormScreen} />
-				<Tab.Screen name="Submits" component={SubmitsScreen} />
-				<Tab.Screen name="Random image" component={RandomImageScreen} />
-			</Tab.Navigator>
-		</NavigationContainer>
-		// </DataProvider>
+		<DataProvider>
+			<NavigationContainer>
+				<Tab.Navigator>
+					<Tab.Screen name="Formulär" component={FormScreen} />
+					<Tab.Screen name="Submits" component={SubmitsScreen} />
+					<Tab.Screen name="Random image" component={RandomImageScreen} />
+				</Tab.Navigator>
+			</NavigationContainer>
+		</DataProvider>
 	);
 }

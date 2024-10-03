@@ -38,7 +38,7 @@ export default function RandomImageScreen() {
 					colors={["#4c669f", "#3b5998", "#192f6a"]}
 					style={styles.button}
 				>
-					<Text style={styles.buttonText}>Get new image</Text>
+					<Text style={styles.buttonText}>Hämta ny bild</Text>
 				</LinearGradient>
 			</Pressable>
 		</View>

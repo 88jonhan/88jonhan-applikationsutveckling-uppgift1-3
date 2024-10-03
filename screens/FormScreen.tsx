@@ -210,6 +210,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		borderWidth: 1,
 		borderColor: "grey",
+		paddingLeft: 5,
 	},
 	ageContainer: {
 		width: "100%",
